@@ -5,10 +5,19 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="Source Files\Sys">
+      <UniqueIdentifier>{df17a9f4-62da-4bd5-b1df-914d7e3af6e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Preprocessor">
+      <UniqueIdentifier>{66f699fc-7573-4e1d-aeae-23bcf6a38c07}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\engine\GameInstance.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\Sys\GameWindowWin32.cpp">
+      <Filter>Source Files\Sys</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -17,6 +26,12 @@
     </ClInclude>
     <ClInclude Include="..\..\src\engine\precompiled.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\Sys\GameWindow.h">
+      <Filter>Source Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\Preprocessor\platform.h">
+      <Filter>Source Files\Preprocessor</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,3 +1,4 @@
 windows/build/
 
 *.suo
+*.db
