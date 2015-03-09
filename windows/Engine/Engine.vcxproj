@@ -75,6 +75,10 @@
     <ClInclude Include="..\..\src\engine\Preprocessor\platform.h" />
     <ClInclude Include="..\..\src\engine\Sys\GameWindow.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\README.md" />
+    <None Include="..\..\TASKS.md" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

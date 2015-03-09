@@ -10,6 +10,7 @@
 * Drawing textures
 * Transformations
 * Camera
+* TextRendering
 * InputSystem
 * Android port
 * Audio

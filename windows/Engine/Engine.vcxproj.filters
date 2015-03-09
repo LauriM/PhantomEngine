@@ -11,6 +11,9 @@
     <Filter Include="Source Files\Preprocessor">
       <UniqueIdentifier>{66f699fc-7573-4e1d-aeae-23bcf6a38c07}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{214e27f9-b49e-4a7c-9e56-1653f5737d96}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\engine\GameInstance.cpp">
@@ -33,5 +36,13 @@
     <ClInclude Include="..\..\src\engine\Preprocessor\platform.h">
       <Filter>Source Files\Preprocessor</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\TASKS.md">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\..\README.md">
+      <Filter>Resources</Filter>
+    </None>
   </ItemGroup>
 </Project>
