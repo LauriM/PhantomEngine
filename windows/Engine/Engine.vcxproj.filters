@@ -14,12 +14,21 @@
     <Filter Include="Resources">
       <UniqueIdentifier>{214e27f9-b49e-4a7c-9e56-1653f5737d96}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Debug">
+      <UniqueIdentifier>{f4d1c70b-7528-49b7-95bd-e4cb288497fe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\engine\GameInstance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\engine\Sys\GameWindowWin32.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\debug\Debug.cpp">
+      <Filter>Source Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\Logger.cpp">
       <Filter>Source Files\Sys</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,6 +44,12 @@
     </ClInclude>
     <ClInclude Include="..\..\src\engine\Preprocessor\platform.h">
       <Filter>Source Files\Preprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\debug\Debug.h">
+      <Filter>Source Files\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\sys\Logger.h">
+      <Filter>Source Files\Sys</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

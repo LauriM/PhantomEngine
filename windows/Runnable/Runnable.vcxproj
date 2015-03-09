@@ -68,6 +68,9 @@
   <ItemGroup>
     <ClCompile Include="..\..\src\runnable\Main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\runnable\DebugLogger.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

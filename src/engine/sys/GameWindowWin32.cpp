@@ -23,7 +23,7 @@ namespace phantom {
 		windowClass.lpfnWndProc = (WNDPROC)staticProc;
 
 		if (!RegisterClass(&windowClass))
-			printf("Window class creation failed with code: %i", GetLastError());
+			LOG_ERROR("Window class creation failed with code: " << GetLastError());
 
 		windowHandle = CreateWindowEx(
 			WS_EX_APPWINDOW,
@@ -41,7 +41,7 @@ namespace phantom {
 
 		if (!windowHandle)
 		{
-			printf("Error creating window: %i", GetLastError());
+			LOG_ERROR("Error creating window: " << GetLastError());
 			windowClosed = true;
 			return;
 		}

@@ -66,14 +66,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\src\engine\debug\Debug.cpp" />
     <ClCompile Include="..\..\src\engine\GameInstance.cpp" />
     <ClCompile Include="..\..\src\engine\Sys\GameWindowWin32.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\Logger.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\src\engine\debug\Debug.h" />
     <ClInclude Include="..\..\src\engine\GameInstance.h" />
     <ClInclude Include="..\..\src\engine\precompiled.h" />
     <ClInclude Include="..\..\src\engine\Preprocessor\platform.h" />
     <ClInclude Include="..\..\src\engine\Sys\GameWindow.h" />
+    <ClInclude Include="..\..\src\engine\sys\Logger.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\README.md" />
