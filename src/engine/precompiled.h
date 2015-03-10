@@ -3,6 +3,8 @@
 #include <string>
 #include <cstdio>
 #include <sstream>
+#include <assert.h>
+#include <vector>
 
 typedef std::string String;
 

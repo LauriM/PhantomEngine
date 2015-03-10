@@ -17,6 +17,12 @@
     <Filter Include="Source Files\Debug">
       <UniqueIdentifier>{f4d1c70b-7528-49b7-95bd-e4cb288497fe}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Lang">
+      <UniqueIdentifier>{adde7342-f383-4098-a0e0-042ea647b27f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\File">
+      <UniqueIdentifier>{5ccc9594-f2d0-4c39-857e-e31fa486c450}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\engine\GameInstance.cpp">
@@ -29,6 +35,18 @@
       <Filter>Source Files\Debug</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\engine\sys\Logger.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\file\DirectoryArchive.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\file\FileManager.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\FileSystemUnix.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\sys\FileSystemWin32.cpp">
       <Filter>Source Files\Sys</Filter>
     </ClCompile>
   </ItemGroup>
@@ -49,6 +67,30 @@
       <Filter>Source Files\Debug</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\engine\sys\Logger.h">
+      <Filter>Source Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\file\Archive.h">
+      <Filter>Source Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\file\DirectoryArchive.h">
+      <Filter>Source Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\file\FileData.h">
+      <Filter>Source Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\file\FileList.h">
+      <Filter>Source Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\file\FileManager.h">
+      <Filter>Source Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\lang\ReferenceCountable.h">
+      <Filter>Source Files\Lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\lang\ReferenceCountedPointer.h">
+      <Filter>Source Files\Lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\sys\FileSystem.h">
       <Filter>Source Files\Sys</Filter>
     </ClInclude>
   </ItemGroup>

@@ -2,3 +2,5 @@ windows/build/
 
 *.suo
 *.db
+*.opensdf
+*.sdf

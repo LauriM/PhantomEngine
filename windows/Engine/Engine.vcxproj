@@ -67,15 +67,27 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\engine\debug\Debug.cpp" />
+    <ClCompile Include="..\..\src\engine\file\DirectoryArchive.cpp" />
+    <ClCompile Include="..\..\src\engine\file\FileManager.cpp" />
     <ClCompile Include="..\..\src\engine\GameInstance.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\FileSystemUnix.cpp" />
+    <ClCompile Include="..\..\src\engine\sys\FileSystemWin32.cpp" />
     <ClCompile Include="..\..\src\engine\Sys\GameWindowWin32.cpp" />
     <ClCompile Include="..\..\src\engine\sys\Logger.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\engine\debug\Debug.h" />
+    <ClInclude Include="..\..\src\engine\file\Archive.h" />
+    <ClInclude Include="..\..\src\engine\file\DirectoryArchive.h" />
+    <ClInclude Include="..\..\src\engine\file\FileData.h" />
+    <ClInclude Include="..\..\src\engine\file\FileList.h" />
+    <ClInclude Include="..\..\src\engine\file\FileManager.h" />
     <ClInclude Include="..\..\src\engine\GameInstance.h" />
+    <ClInclude Include="..\..\src\engine\lang\ReferenceCountable.h" />
+    <ClInclude Include="..\..\src\engine\lang\ReferenceCountedPointer.h" />
     <ClInclude Include="..\..\src\engine\precompiled.h" />
     <ClInclude Include="..\..\src\engine\Preprocessor\platform.h" />
+    <ClInclude Include="..\..\src\engine\sys\FileSystem.h" />
     <ClInclude Include="..\..\src\engine\Sys\GameWindow.h" />
     <ClInclude Include="..\..\src\engine\sys\Logger.h" />
   </ItemGroup>
