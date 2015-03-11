@@ -1,6 +1,7 @@
 #pragma once
 
 #include "engine/file/FileManager.h"
+#include "engine/resource/ResourceManager.h"
 
 namespace phantom
 {
@@ -8,11 +9,11 @@ namespace phantom
 	{
 	private:
 		FileManager fileManager;
-		ResourceManager resource;
+		ResourceManager resourceManager;
 
 	protected:
 		FileManager &getFileManager() { return fileManager; }
-		ResourceManager &getResourceManager() { return resource; }
+		ResourceManager &getResourceManager() { return resourceManager; }
 
 	public:
 		GameInstance();
