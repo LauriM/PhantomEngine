@@ -14,6 +14,10 @@ namespace phantom {
 
 	class WglContext : public GraphicsContext
 	{
+	private:
+		HDC handle;
+		HGLRC context;
+
 	public:
 		void initContext(void *handle);
 		void uninitContext();

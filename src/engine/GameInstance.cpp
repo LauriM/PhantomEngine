@@ -2,6 +2,7 @@
 
 #include "engine/file/DirectoryArchive.h"
 #include "engine/GameInstance.h"
+#include "engine/renderer/RendererSystem.h"
 
 namespace phantom 
 {
@@ -11,9 +12,16 @@ namespace phantom
 		fileManager.addArchive(new DirectoryArchive("../data"));
 	}
 
+	GameInstance::~GameInstance()
+	{
+		delete rendererSystem;
+	}
+
 	void GameInstance::initInstance(void *handle)
 	{
-		LOG_INFO("init instance! with handle: " << handle);
+
+		rendererSystem = new RendererSystem(handle);
+
 		init();
 	}
 

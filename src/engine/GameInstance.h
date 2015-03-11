@@ -5,11 +5,15 @@
 
 namespace phantom
 {
+
+	class RendererSystem;
+
 	class GameInstance
 	{
 	private:
 		FileManager fileManager;
 		ResourceManager resourceManager;
+		RendererSystem *rendererSystem;
 
 		virtual bool init() = 0;
 
@@ -19,6 +23,7 @@ namespace phantom
 
 	public:
 		GameInstance();
+		~GameInstance();
 
 		void initInstance(void *handle);
 
