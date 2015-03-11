@@ -70,6 +70,7 @@
     <ClCompile Include="..\..\src\engine\file\DirectoryArchive.cpp" />
     <ClCompile Include="..\..\src\engine\file\FileManager.cpp" />
     <ClCompile Include="..\..\src\engine\GameInstance.cpp" />
+    <ClCompile Include="..\..\src\engine\resource\ResourceManager.cpp" />
     <ClCompile Include="..\..\src\engine\sys\FileSystemUnix.cpp" />
     <ClCompile Include="..\..\src\engine\sys\FileSystemWin32.cpp" />
     <ClCompile Include="..\..\src\engine\Sys\GameWindowWin32.cpp" />
@@ -87,6 +88,9 @@
     <ClInclude Include="..\..\src\engine\lang\ReferenceCountedPointer.h" />
     <ClInclude Include="..\..\src\engine\precompiled.h" />
     <ClInclude Include="..\..\src\engine\Preprocessor\platform.h" />
+    <ClInclude Include="..\..\src\engine\resource\Resource.h" />
+    <ClInclude Include="..\..\src\engine\resource\ResourceLoader.h" />
+    <ClInclude Include="..\..\src\engine\resource\ResourceManager.h" />
     <ClInclude Include="..\..\src\engine\sys\FileSystem.h" />
     <ClInclude Include="..\..\src\engine\Sys\GameWindow.h" />
     <ClInclude Include="..\..\src\engine\sys\Logger.h" />

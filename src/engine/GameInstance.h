@@ -8,8 +8,11 @@ namespace phantom
 	{
 	private:
 		FileManager fileManager;
+		ResourceManager resource;
 
 	protected:
+		FileManager &getFileManager() { return fileManager; }
+		ResourceManager &getResourceManager() { return resource; }
 
 	public:
 		GameInstance();

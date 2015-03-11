@@ -23,6 +23,9 @@
     <Filter Include="Source Files\File">
       <UniqueIdentifier>{5ccc9594-f2d0-4c39-857e-e31fa486c450}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Resource">
+      <UniqueIdentifier>{c228966c-ab19-4002-9aee-407179a25ed1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\engine\GameInstance.cpp">
@@ -48,6 +51,9 @@
     </ClCompile>
     <ClCompile Include="..\..\src\engine\sys\FileSystemWin32.cpp">
       <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\resource\ResourceManager.cpp">
+      <Filter>Source Files\Resource</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -92,6 +98,15 @@
     </ClInclude>
     <ClInclude Include="..\..\src\engine\sys\FileSystem.h">
       <Filter>Source Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\resource\Resource.h">
+      <Filter>Source Files\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\resource\ResourceLoader.h">
+      <Filter>Source Files\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\resource\ResourceManager.h">
+      <Filter>Source Files\Resource</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
