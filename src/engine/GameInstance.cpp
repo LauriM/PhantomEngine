@@ -11,4 +11,10 @@ namespace phantom
 		fileManager.addArchive(new DirectoryArchive("../data"));
 	}
 
+	void GameInstance::initInstance(void *handle)
+	{
+		LOG_INFO("init instance! with handle: " << handle);
+		init();
+	}
+
 }

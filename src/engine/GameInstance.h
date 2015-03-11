@@ -11,6 +11,8 @@ namespace phantom
 		FileManager fileManager;
 		ResourceManager resourceManager;
 
+		virtual bool init() = 0;
+
 	protected:
 		FileManager &getFileManager() { return fileManager; }
 		ResourceManager &getResourceManager() { return resourceManager; }
@@ -18,7 +20,8 @@ namespace phantom
 	public:
 		GameInstance();
 
-		virtual bool init() = 0;
+		void initInstance(void *handle);
+
 		virtual void update() = 0;
 		virtual void uninit() = 0;
 

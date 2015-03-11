@@ -26,6 +26,9 @@
     <Filter Include="Source Files\Resource">
       <UniqueIdentifier>{c228966c-ab19-4002-9aee-407179a25ed1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Renderer">
+      <UniqueIdentifier>{7f09ed22-0ca5-4f56-be66-1ff239c0d934}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\engine\GameInstance.cpp">
@@ -54,6 +57,15 @@
     </ClCompile>
     <ClCompile Include="..\..\src\engine\resource\ResourceManager.cpp">
       <Filter>Source Files\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\renderer\RendererSystem.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\renderer\Device.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engine\renderer\WglContext.cpp">
+      <Filter>Source Files\Renderer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +119,18 @@
     </ClInclude>
     <ClInclude Include="..\..\src\engine\resource\ResourceManager.h">
       <Filter>Source Files\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\RendererSystem.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\Device.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\GraphicsContext.h">
+      <Filter>Source Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engine\renderer\WglContext.h">
+      <Filter>Source Files\Renderer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

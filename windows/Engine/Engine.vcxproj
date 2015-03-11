@@ -34,10 +34,12 @@
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\PhantomGlobal.props" />
+    <Import Project="..\OpenGL.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="..\PhantomGlobal.props" />
+    <Import Project="..\OpenGL.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup />
@@ -70,6 +72,9 @@
     <ClCompile Include="..\..\src\engine\file\DirectoryArchive.cpp" />
     <ClCompile Include="..\..\src\engine\file\FileManager.cpp" />
     <ClCompile Include="..\..\src\engine\GameInstance.cpp" />
+    <ClCompile Include="..\..\src\engine\renderer\Device.cpp" />
+    <ClCompile Include="..\..\src\engine\renderer\RendererSystem.cpp" />
+    <ClCompile Include="..\..\src\engine\renderer\WglContext.cpp" />
     <ClCompile Include="..\..\src\engine\resource\ResourceManager.cpp" />
     <ClCompile Include="..\..\src\engine\sys\FileSystemUnix.cpp" />
     <ClCompile Include="..\..\src\engine\sys\FileSystemWin32.cpp" />
@@ -88,6 +93,10 @@
     <ClInclude Include="..\..\src\engine\lang\ReferenceCountedPointer.h" />
     <ClInclude Include="..\..\src\engine\precompiled.h" />
     <ClInclude Include="..\..\src\engine\Preprocessor\platform.h" />
+    <ClInclude Include="..\..\src\engine\renderer\GraphicsContext.h" />
+    <ClInclude Include="..\..\src\engine\renderer\Device.h" />
+    <ClInclude Include="..\..\src\engine\renderer\RendererSystem.h" />
+    <ClInclude Include="..\..\src\engine\renderer\WglContext.h" />
     <ClInclude Include="..\..\src\engine\resource\Resource.h" />
     <ClInclude Include="..\..\src\engine\resource\ResourceLoader.h" />
     <ClInclude Include="..\..\src\engine\resource\ResourceManager.h" />

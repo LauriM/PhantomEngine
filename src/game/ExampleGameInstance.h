@@ -4,8 +4,10 @@
 
 class ExampleGameInstance : public phantom::GameInstance
 {
-public:
+private:
 	bool init();
+
+public:
 	void update();
 	void uninit();
 

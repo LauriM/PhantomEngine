@@ -1,6 +1,5 @@
 # Tasks
 
-* FileManager (No need to manage resources, user handles that)
 * Renderer initialization
 * Renderer wrapping
 * Texture loading
@@ -17,3 +16,4 @@
 * Debug printing (wrapping + outputdebugstring)
 * Logging
 * Win32 window opening
+* FileManager / ResourceManager
