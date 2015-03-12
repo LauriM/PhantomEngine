@@ -3,6 +3,7 @@
 #include "engine/renderer/WglContext.h"
 
 PFNGLCREATEPROGRAMPROC glCreateProgram = NULL;
+PFNWGLCREATECONTEXTATTRIBSARBPROC wglCreateContextAttribsARB = NULL;
 
 namespace phantom {
 
@@ -30,16 +31,46 @@ namespace phantom {
 			0, 0, 0
 		};
 
+		int attribs[] =
+		{
+			WGL_CONTEXT_MAJOR_VERSION_ARB, 2,
+			WGL_CONTEXT_MINOR_VERSION_ARB, 1,
+			WGL_CONTEXT_FLAGS_ARB, 0,
+			0
+		};
+
 		int pixelFormatID;
 		pixelFormatID = ChoosePixelFormat(handle, &pfd);
 		SetPixelFormat(handle, pixelFormatID, &pfd);
 
-		context = wglCreateContext(handle);
+		HGLRC tempContext = wglCreateContext(handle);
 		DWORD error = GetLastError();
 
-		bool state = wglMakeCurrent(handle, context);
+		BOOL state = wglMakeCurrent(handle, tempContext);
 
+		if (state == false)
+		{
+			LOG_ERROR("Failed to create context!");
+			return;
+		}
+
+		// temp state created, find the proc addresses!
+		wglCreateContextAttribsARB = (PFNWGLCREATECONTEXTATTRIBSARBPROC )wglGetProcAddress("wglCreateContextAttribsARB");
+
+		context = wglCreateContextAttribsARB(handle, 0, attribs);
+
+		// Make the new context active!
+		state = wglMakeCurrent(handle, context);
+
+		if (state == false)
+		{
+			LOG_ERROR("Failed to create context!");
+			return;
+		}
+
+		// find the correct ptrs for the functions!
 		glCreateProgram = (PFNGLCREATEPROGRAMPROC)wglGetProcAddress("glCreateProgram");
+
 	}
 
 	void WglContext::uninitContext()

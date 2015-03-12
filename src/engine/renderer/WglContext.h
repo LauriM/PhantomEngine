@@ -9,6 +9,7 @@
 #include <gl/wglext.h>
 
 extern PFNGLCREATEPROGRAMPROC glCreateProgram;
+extern PFNWGLCREATECONTEXTATTRIBSARBPROC wglCreateContextAttribsARB;
 
 namespace phantom {
 
