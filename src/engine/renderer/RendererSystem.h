@@ -13,6 +13,8 @@ namespace phantom {
 
 	public:
 		RendererSystem(void *handle);
+
+		void draw();
 	};
 
 }

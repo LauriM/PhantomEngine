@@ -22,7 +22,7 @@ int main()
 	LOG_INFO("Entering the main loop");
 
 	while (instance.running())
-		instance.update();
+		instance.updateInstance();
 
 	instance.uninit();
 

@@ -6,9 +6,9 @@ class ExampleGameInstance : public phantom::GameInstance
 {
 private:
 	bool init();
+	void update();
 
 public:
-	void update();
 	void uninit();
 
 	bool running();

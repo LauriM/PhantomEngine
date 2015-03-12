@@ -70,7 +70,6 @@ namespace phantom {
 
 		// find the correct ptrs for the functions!
 		glCreateProgram = (PFNGLCREATEPROGRAMPROC)wglGetProcAddress("glCreateProgram");
-
 	}
 
 	void WglContext::uninitContext()

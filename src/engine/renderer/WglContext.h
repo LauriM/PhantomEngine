@@ -22,6 +22,8 @@ namespace phantom {
 	public:
 		void initContext(void *handle);
 		void uninitContext();
+
+		HDC getHandle() { return handle; }
 	};
 
 }

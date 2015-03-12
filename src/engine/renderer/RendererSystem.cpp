@@ -10,12 +10,20 @@ namespace phantom {
 	{
 #ifdef OS_WINDOWS
 		context = new WglContext();
-#endif
 
 		context->initContext(handle);
 
-		device = new Device();
+		device = new Device(((WglContext*)context)->getHandle());
+#endif
+
 
 		LOG_INFO("TODO: device creation");
 	}
+
+	void RendererSystem::draw()
+	{
+		device->clearScreen();
+		device->swapBuffers();
+	}
+
 }

@@ -16,6 +16,7 @@ namespace phantom
 		RendererSystem *rendererSystem;
 
 		virtual bool init() = 0;
+		virtual void update() = 0;
 
 	protected:
 		FileManager &getFileManager() { return fileManager; }
@@ -26,8 +27,8 @@ namespace phantom
 		~GameInstance();
 
 		void initInstance(void *handle);
+		void updateInstance();
 
-		virtual void update() = 0;
 		virtual void uninit() = 0;
 
 		virtual bool running() = 0;

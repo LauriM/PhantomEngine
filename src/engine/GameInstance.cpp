@@ -25,4 +25,12 @@ namespace phantom
 		init();
 	}
 
+
+	void GameInstance::updateInstance()
+	{
+		update();
+
+		rendererSystem->draw();
+	}
+
 }
